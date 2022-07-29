@@ -19,8 +19,24 @@ class CartPage extends StatelessWidget{
                   topLeft: Radius.circular(33),
                   topRight: Radius.circular(33)
                   )),
-                 child: Column(children: [
+                 child: Column(
+                  children: [
                   CartItemSamples(),
+                  Container(
+                    // decoration: BoxDecoratio(
+                    //   borderRadius: BorderRadius.circular(10),
+
+                  ),
+                  margin: EdgeInsets.symmetric(vertical: 20, horizontal: 15),
+                  padding: EdgeInsets.all,
+                  child: Row(children: []),
+                    Container(
+                      Decoration: BoxDecoration(
+                        Color: Colors.blue,
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                      child:build(context)
+                    )
                  ]),
             )
           ],),
