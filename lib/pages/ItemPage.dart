@@ -4,6 +4,7 @@ import 'package:clippy_flutter/arc.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
+import 'package:theproject/widgets/ItemBottomNavBar.dart';
 
 import '../widgets/ItemAppBar.dart';
 
@@ -43,8 +44,8 @@ class ItemPage extends StatelessWidget{
                     children: [
                       Padding(
                         padding: EdgeInsets.only(
-                          top:50,
-                          bottom: 20,
+                          top:4,
+                          bottom: 15,
                         ),
                         child: Row(
                           children: [
@@ -231,7 +232,7 @@ class ItemPage extends StatelessWidget{
               )
           ],
         ),
-        //bottomNavigationBar: ItemBottomNavBar(),
+        bottomNavigationBar: ItemBottomNavBar(),
       );
     }
   }

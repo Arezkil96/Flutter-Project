@@ -1,4 +1,6 @@
 
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'package:theproject/widgets/CartItemSamples.dart';
 import '../widgets/CartAppBar.dart';
@@ -54,6 +56,7 @@ class CartPage extends StatelessWidget {
             )
           ],
         ),
-        bottomNavigationBar: CartBottomNavBar());
+        bottomNavigationBar: CartBottomNavBar(),
+        );
   }
 }
