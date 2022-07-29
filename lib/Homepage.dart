@@ -1,11 +1,38 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
+import 'dart:convert';
+
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:http/http.dart';
 import 'widgets/CategoriesWidget.dart';
 import 'widgets/HomeAppBar.dart';
 import 'widgets/ItemsWidget.dart';
+
+class Product{
+  static String baseUrl = "https://fakestoreapi.com/products/";
+  static Future<List> getAllProduct() async{
+    try{
+      var res = await get(Uri.parse(baseUrl+ "/products"));
+      if(res.statusCode == 200){
+        print(jsonDecode(res.body));
+        return jsonDecode(res.body);
+      }
+      else{
+        return Future.error("erreur serveur");
+      }
+    }
+    catch(err){
+      return Future.error(err);
+    }
+  }
+}
+
+
+
+
+
 
 class HomePage extends StatelessWidget{
   @override
