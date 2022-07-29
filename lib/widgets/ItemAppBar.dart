@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 
 class ItemAppBar extends StatelessWidget{
@@ -17,8 +19,6 @@ class ItemAppBar extends StatelessWidget{
             size: 30,
             color: Color(0xFF4C53A5),
             ),
-            
-
         ),
         Padding(
               padding: EdgeInsets.only(left:20),
@@ -27,11 +27,17 @@ class ItemAppBar extends StatelessWidget{
                 style: TextStyle(
                   fontSize: 23,
                   fontWeight: FontWeight.bold,
-                  color: Color(0xFF4C53A5)
+                  color: Color(0xFF4C53A5),
                 ),
-              ),
-              
+              ),  
             ),
+            Spacer(),
+            Icon(
+              Icons.favorite,
+              size:30,
+              color: Colors.red,
+            ),
+
         ],
       ),
     );
