@@ -45,7 +45,7 @@ class CartItemSamples extends StatelessWidget {
             ],
           ),),
           Spacer(),
-          Padding(padding: EdgeInsets.symmetric(vertical: 5)
+          Padding(padding: EdgeInsets.symmetric(vertical: 5)),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.end,
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -66,23 +66,24 @@ class CartItemSamples extends StatelessWidget {
                         spreadRadius: 1,
                         blurRadius: 10,
                       ),
-                    ]
+                    ],
                   ),
                   child: Icon(
                     CupertinoIcons.plus,
                     size: 18,),
                   ),
+              ],
                 ),
                 Container(
                   margin: EdgeInsets.symmetric(horizontal: 10),
-                  child: Text("01",
+                  child: Text(
+                    "01",
                    style: TextStyle(
                     fontSize: 16,
                     fontWeight:FontWeight.bold,
                     color: Colors.blue,),
                 ),
-
-                Container(
+                child: Container(
                   padding: EdgeInsets.all(4),
                   decoration: BoxDecoration(
                     color: Colors.white,
@@ -93,17 +94,22 @@ class CartItemSamples extends StatelessWidget {
                         spreadRadius: 1,
                         blurRadius: 10,
                       ),
-                    ]
+                    ],
                   ),
                   child: Icon(
                     CupertinoIcons.minus,
                     size: 18,),
                   ),
-                )
-              ]),  
-          ]),)
-      ]),
+                ),
+              ],
+              ),  
+          ],
+          ),
+          ),
+      ],
+      ),
 
-    ]);
+    ]
+    )
   }
 }
