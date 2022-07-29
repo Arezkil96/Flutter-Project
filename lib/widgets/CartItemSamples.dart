@@ -4,12 +4,13 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class CartItemSamples extends StatelessWidget {
+  const CartItemSamples({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Column(children: [
       for (int i = 0; i < 4; i++)
         Container(
-
           height: 100,
           margin: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
           padding: const EdgeInsets.all(10),
@@ -115,6 +116,5 @@ class CartItemSamples extends StatelessWidget {
           ]),
         )
     ]);
-
   }
 }

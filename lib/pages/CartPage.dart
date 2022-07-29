@@ -1,6 +1,5 @@
 import 'dart:html';
 import 'package:flutter/material.dart';
-
 import 'package:theproject/widgets/CartItemSamples.dart';
 import '../widgets/CartAppBar.dart';
 import '../widgets/CartBottomNavBar.dart';
